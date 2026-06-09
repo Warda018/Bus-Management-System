@@ -57,12 +57,11 @@ XSS protection
 
  System Architecture
 File Structure
-text
 Bus-Stop-Management-System/
 ├── index.html          # Frontend interface (Landing page + Dashboard)
 ├── style.css           # Complete styling and responsive design
 ├── script.js           # Client-side logic and AJAX requests
-└── system.php  
+└── system.php          # Backend API and database operations
 
 # Backend API and database operations
 Technology Stack
