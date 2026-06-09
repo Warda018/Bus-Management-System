@@ -1,5 +1,4 @@
 # BUS STOP MANAGEMENT SYSTEM (BSMS)
-## Complete Transport Management Solution
 
 ---
 
