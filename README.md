@@ -1,108 +1,124 @@
-Bus Stop Management System (BSMS) - Complete README
-📋 Project Overview
-The Bus Stop Management System (BSMS) is a comprehensive web-based application designed to streamline and manage bus transport operations. This system provides an all-in-one solution for managing buses, drivers, routes, schedules, tickets, payments, and real-time bus tracking. Built with modern web technologies, it offers role-based access control for Admin, Driver, and Passenger users.
+# BUS STOP MANAGEMENT SYSTEM (BSMS)
+## Complete Transport Management Solution
 
-👨‍💻 Developer Information
-Field	Details
-Name	WARDA SALIUM ABDI
-Institution	Mzumbe University
-Programme	Bachelor of Science in Information Technology Systems (BSc ITS)
-Registration Number	14322027/T.24
-Project Title	Bus Stop Management System (BSMS)
-Year	2026
-🚀 Features
-Core Features
-✅ User Authentication - Secure login and registration system
+---
 
-✅ Role-Based Access Control - Different permissions for Admin, Driver, and Passenger
+## 📋 PROJECT OVERVIEW
 
-✅ Dashboard Analytics - Real-time statistics with interactive charts
+The **Bus Stop Management System (BSMS)** is a comprehensive web-based application designed to streamline and manage bus transport operations. This system provides an all-in-one solution for managing buses, drivers, routes, schedules, tickets, payments, and real-time bus tracking. Built with modern web technologies, it offers role-based access control for Admin, Driver, and Passenger users.
 
-✅ Bus Management - Add, edit, delete, and search buses
+---
 
-✅ Driver Management - Manage driver information and licenses
+## 👨‍💻 DEVELOPER INFORMATION
 
-✅ Route Management - Create and manage bus routes
+| Field | Details |
+|-------|---------|
+| **Name** | WARDA SALIUM ABDI |
+| **Institution** | Mzumbe University |
+| **Programme** | Bachelor of Science in Information Technology Systems (BSc ITS) |
+| **Registration Number** | 14322027/T.24 |
+| **Project Title** | Bus Stop Management System (BSMS) |
+| **Year** | 2026 |
 
-✅ Schedule Management - Set departure and arrival times
+---
 
-✅ Ticket Booking - Online ticket reservation with seat selection
+## 🚀 FEATURES
 
-✅ Payment Integration - Multiple payment methods (Cash, M-Pesa, TigoPesa, Airtel Money, Bank)
+### Core Features
+- ✅ User Authentication - Secure login and registration system
+- ✅ Role-Based Access Control - Different permissions for Admin, Driver, and Passenger
+- ✅ Dashboard Analytics - Real-time statistics with interactive charts
+- ✅ Bus Management - Add, edit, delete, and search buses
+- ✅ Driver Management - Manage driver information and licenses
+- ✅ Route Management - Create and manage bus routes
+- ✅ Schedule Management - Set departure and arrival times
+- ✅ Ticket Booking - Online ticket reservation with seat selection
+- ✅ Payment Integration - Multiple payment methods (Cash, M-Pesa, TigoPesa, Airtel Money, Bank)
+- ✅ Live Bus Tracking - Real-time bus location updates
+- ✅ Announcements - Post and view system announcements
+- ✅ Reports Generation - Generate various reports (PDF/Print)
+- ✅ Profile Management - Update profile and change password
 
-✅ Live Bus Tracking - Real-time bus location updates
+### Security Features
+- 🔒 Password hashing (bcrypt)
+- 🔒 SQL injection prevention (Prepared Statements)
+- 🔒 Session-based authentication
+- 🔒 Role-based access control
+- 🔒 XSS protection
 
-✅ Announcements - Post and view system announcements
+---
 
-✅ Reports Generation - Generate various reports (PDF/Print)
+## 📁 SYSTEM ARCHITECTURE
 
-✅ Profile Management - Update profile and change password
+### File Structure
 
-Security Features
-🔒 Password hashing (bcrypt)
-
-🔒 SQL injection prevention (Prepared Statements)
-
-🔒 Session-based authentication
-
-🔒 Role-based access control
-
-🔒 XSS protection
-
-📁 System Architecture
-File Structure
-text
 Bus-Stop-Management-System/
-├── index.html          # Frontend interface (Landing page + Dashboard)
-├── style.css           # Complete styling and responsive design
-├── script.js           # Client-side logic and AJAX requests
-└── system.php          # Backend API and database operations
-Technology Stack
-Layer	Technology
-Frontend	HTML5, CSS3, JavaScript (Vanilla JS)
-Backend	PHP 7.4+
-Database	MySQL 5.7+
-Libraries	Chart.js, Font Awesome 6, Google Fonts (Inter)
-Server	Apache (XAMPP/WAMP/LAMP)
-🗄️ Database Schema
-Database Name: bsms_db
-Tables Structure
-Table	Description
-users	User accounts (Admin, Driver, Passenger)
-bus_stops	Bus stop locations
-buses	Bus fleet information
-drivers	Driver details and licenses
-routes	Bus routes with origin/destination
-bus_assignments	Assignment of buses to drivers and routes
-schedules	Bus departure and arrival schedules
-bus_tracking	Real-time bus location tracking
-passengers	Passenger information
-tickets	Ticket booking records
-payments	Payment transactions
-announcements	System announcements
-reports	Generated reports log
-🔧 Installation Guide
-Prerequisites
-XAMPP (or any local server with PHP and MySQL)
+├── index.html # Frontend interface (Landing page + Dashboard)
+├── style.css # Complete styling and responsive design
+├── script.js # Client-side logic and AJAX requests
+└── system.php # Backend API and database operations
 
-Download from: https://www.apachefriends.org/
 
-Version: PHP 7.4+ and MySQL 5.7+
+### Technology Stack
 
-Web Browser (Chrome, Firefox, Edge recommended)
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | HTML5, CSS3, JavaScript (Vanilla JS) |
+| **Backend** | PHP 7.4+ |
+| **Database** | MySQL 5.7+ |
+| **Libraries** | Chart.js, Font Awesome 6, Google Fonts (Inter) |
+| **Server** | Apache (XAMPP/WAMP/LAMP) |
 
-Step-by-Step Installation
-Step 1: Install XAMPP
-bash
+---
+
+## 🗄️ DATABASE SCHEMA
+
+### Database Name: `bsms_db`
+
+### Tables Structure
+
+| Table | Description |
+|-------|-------------|
+| `users` | User accounts (Admin, Driver, Passenger) |
+| `bus_stops` | Bus stop locations |
+| `buses` | Bus fleet information |
+| `drivers` | Driver details and licenses |
+| `routes` | Bus routes with origin/destination |
+| `bus_assignments` | Assignment of buses to drivers and routes |
+| `schedules` | Bus departure and arrival schedules |
+| `bus_tracking` | Real-time bus location tracking |
+| `passengers` | Passenger information |
+| `tickets` | Ticket booking records |
+| `payments` | Payment transactions |
+| `announcements` | System announcements |
+| `reports` | Generated reports log |
+
+---
+
+## 🔧 INSTALLATION GUIDE
+
+### Prerequisites
+
+1. **XAMPP** (or any local server with PHP and MySQL)
+   - Download from: https://www.apachefriends.org/
+   - Version: PHP 7.4+ and MySQL 5.7+
+
+2. **Web Browser** (Chrome, Firefox, Edge recommended)
+
+### Step-by-Step Installation
+
+#### STEP 1: Install XAMPP
+```bash
 # Download and install XAMPP from official website
 # Default installation path: C:\xampp\
-Step 2: Start XAMPP Services
-bash
+
+STEP 2: Start XAMPP Services
 # Open XAMPP Control Panel
 # Start Apache and MySQL services
 # Ensure both show green indicators
-Step 3: Create Project Folder
-bash
+
+STEP 3: Create Project Folder
+
 # Navigate to XAMPP htdocs folder
 cd C:\xampp\htdocs\
 
@@ -114,18 +130,14 @@ mkdir Bus-Stop-Management-System
 # - style.css
 # - script.js
 # - system.php
-Step 4: Create Database
-bash
-# Open phpMyAdmin
-http://localhost/phpmyadmin
 
-# Click "New" to create database
-# Database name: bsms_db
-# Charset: utf8mb4_general_ci
+STEP 4: Create Database
 
-# Click "SQL" tab and run the complete database schema
-Step 5: Database Schema (Run in phpMyAdmin)
-sql
+
+STEP 5: Run Database Schema
+
+Copy and run this SQL in phpMyAdmin:
+
 CREATE DATABASE bsms_db;
 USE bsms_db;
 
@@ -140,6 +152,8 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+
+
 -- Bus Stops Table
 CREATE TABLE bus_stops (
     stop_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -148,6 +162,8 @@ CREATE TABLE bus_stops (
     description TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
 
 -- Buses Table
 CREATE TABLE buses (
@@ -160,6 +176,7 @@ CREATE TABLE buses (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+
 -- Drivers Table
 CREATE TABLE drivers (
     driver_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -170,6 +187,8 @@ CREATE TABLE drivers (
     address TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
 
 -- Routes Table
 CREATE TABLE routes (
@@ -194,6 +213,8 @@ CREATE TABLE bus_assignments (
     FOREIGN KEY (route_id) REFERENCES routes(route_id) ON DELETE CASCADE
 );
 
+
+
 -- Schedules Table
 CREATE TABLE schedules (
     schedule_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -206,6 +227,8 @@ CREATE TABLE schedules (
     FOREIGN KEY (route_id) REFERENCES routes(route_id) ON DELETE CASCADE
 );
 
+
+
 -- Bus Tracking Table
 CREATE TABLE bus_tracking (
     tracking_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -216,6 +239,8 @@ CREATE TABLE bus_tracking (
     FOREIGN KEY (bus_id) REFERENCES buses(bus_id) ON DELETE CASCADE
 );
 
+
+
 -- Passengers Table
 CREATE TABLE passengers (
     passenger_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -224,6 +249,8 @@ CREATE TABLE passengers (
     email VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
 
 -- Tickets Table
 CREATE TABLE tickets (
@@ -239,6 +266,8 @@ CREATE TABLE tickets (
     FOREIGN KEY (route_id) REFERENCES routes(route_id) ON DELETE CASCADE
 );
 
+
+
 -- Payments Table
 CREATE TABLE payments (
     payment_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -250,6 +279,8 @@ CREATE TABLE payments (
     FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id) ON DELETE CASCADE
 );
 
+
+
 -- Announcements Table
 CREATE TABLE announcements (
     announcement_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -260,6 +291,8 @@ CREATE TABLE announcements (
     FOREIGN KEY (posted_by) REFERENCES users(user_id) ON DELETE SET NULL
 );
 
+
+
 -- Reports Table
 CREATE TABLE reports (
     report_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -269,75 +302,8 @@ CREATE TABLE reports (
     generated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (generated_by) REFERENCES users(user_id) ON DELETE SET NULL
 );
-Step 6: Insert Default Admin User
-sql
--- Password is 'admin123' (hashed)
-INSERT INTO users (full_name, username, email, password, role) 
-VALUES ('Administrator', 'admin', 'admin@bsms.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Admin');
-Step 7: Configure Database Connection
-Open system.php and verify database credentials:
 
-php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'bsms_db');
-Step 8: Access the Application
-bash
-# Open web browser and navigate to:
-http://localhost/Bus-Stop-Management-System/
-
-# Or if using different port:
-http://localhost:8080/Bus-Stop-Management-System/
-🔑 Login Credentials
-Default Admin Account
-Field	Value
-Username	admin
-Password	admin123
-Create New Accounts
-Click Register button on landing page
-
-Choose role: Passenger or Driver
-
-Admin accounts must be created by existing Admin
-
-👥 Role-Based Access Control
-👑 ADMIN - Full Access
-Module	Permission
-Dashboard	✅ View all statistics
-Users	✅ Create, Read, Update, Delete
-Buses	✅ Create, Read, Update, Delete
-Drivers	✅ Create, Read, Update, Delete
-Routes	✅ Create, Read, Update, Delete
-Assignments	✅ Create, Read, Update, Delete
-Schedules	✅ Create, Read, Update, Delete
-Tracking	✅ View all, Update any
-Passengers	✅ View all
-Tickets	✅ View all, Cancel any
-Payments	✅ View all, Process refunds
-Announcements	✅ Create, Edit, Delete
-Reports	✅ Generate all reports
-Settings	✅ Full access
-🚌 DRIVER - Limited Access
-Module	Permission
-Dashboard	✅ View basic stats
-Buses	✅ View only
-Routes	✅ View only
-Schedules	✅ View own schedules
-Tracking	✅ Update own bus location
-Announcements	✅ View only
-Reports	✅ View limited reports
-Settings	✅ Change own password
-👤 PASSENGER - Basic Access
-Module	Permission
-Dashboard	✅ View basic stats
-Routes	✅ View all routes
-Schedules	✅ View all schedules
-Tickets	✅ Book, View, Cancel own tickets
-Payments	✅ Make payments
-Announcements	✅ View only
-Settings	✅ Change own password
-📱 How to Use the System
+ HOW TO USE THE SYSTEM
 For All Users
 1. Landing Page Navigation
 Click navigation links to view different sections
@@ -440,7 +406,7 @@ Click View to see details
 
 Click Cancel to cancel (if needed)
 
-🛠️ API Endpoints
+🛠️ API ENDPOINTS
 Endpoint	Method	Description
 ?action=login	POST	User authentication
 ?action=register	POST	New user registration
@@ -456,7 +422,7 @@ Endpoint	Method	Description
 ?action=book_ticket	POST	Book new ticket
 ?action=get_announcements	GET	List announcements
 ?action=generate_report	GET	Generate report
-🐛 Troubleshooting
+🐛 TROUBLESHOOTING
 Common Issues and Solutions
 Problem	Solution
 White screen / Nothing loads	Check XAMPP Apache is running; Access via http://localhost/ not file://
@@ -476,7 +442,7 @@ Enable PHP error reporting in system.php:
 php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-📊 System Requirements
+📊 SYSTEM REQUIREMENTS
 Minimum Requirements
 Component	Requirement
 CPU	1.0 GHz or higher
@@ -491,7 +457,7 @@ RAM	2 GB or higher
 Storage	500 MB free space
 Internet	Broadband connection
 Browser	Latest version of Chrome/Firefox
-📝 Project Status
+📝 PROJECT STATUS
 Aspect	Status
 Frontend Development	✅ Complete
 Backend API	✅ Complete
@@ -503,26 +469,24 @@ Reporting	✅ Complete
 Responsive Design	✅ Complete
 Testing	✅ Complete
 Documentation	✅ Complete
-🤝 Support
+🤝 SUPPORT
 For technical support or questions:
 
-Email: bsms@mzumbe.ac.tz
-
-Phone: +255 123 456 789
-
-Location: Mzumbe University, Morogoro, Tanzania
-
-📄 License
+Contact Method	Details
+Email	bsms@mzumbe.ac.tz
+Phone	+255 123 456 789
+Location	Mzumbe University, Morogoro, Tanzania
+📄 LICENSE
 This project is developed for academic purposes at Mzumbe University. All rights reserved.
 
-🙏 Acknowledgments
+🙏 ACKNOWLEDGMENTS
 Mzumbe University - For academic support
 
 Bachelor of Science in Information Technology Systems (BSc ITS) Programme
 
 All project supervisors and mentors
 
-📌 Important Notes
+📌 IMPORTANT NOTES
 Always backup your database before making major changes
 
 Change default admin password after first login
@@ -533,7 +497,7 @@ Regularly backup the entire project folder
 
 Keep XAMPP updated to latest version for security patches
 
-🎯 Future Enhancements
+🎯 FUTURE ENHANCEMENTS
 Mobile application (Android/iOS)
 
 SMS notifications
@@ -552,5 +516,24 @@ Export to Excel/CSV
 
 Online payment gateway integration
 
-© 2026 Bus Stop Management System | Developed by WARDA SALIUM ABDI | Mzumbe University
+📁 FILE LIST
+Make sure you have these 4 files in your folder:
 
+text
+1. index.html    - Main frontend file
+2. style.css     - All styling
+3. script.js     - JavaScript functions
+4. system.php    - PHP backend API
+✅ FINAL CHECKLIST BEFORE RUNNING
+XAMPP installed and running (Apache + MySQL green)
+
+Folder named Bus-Stop-Management-System in C:\xampp\htdocs\
+
+All 4 files copied to the folder
+
+Database bsms_db created in phpMyAdmin
+All SQL tables created successfully
+Admin user inserted into database
+Access via http://localhost/Bus-Stop-Management-System/
+Login with admin / admin123
+© 2026 Bus Stop Management System | Developed by WARDA SALIUM ABDI | Mzumbe University
