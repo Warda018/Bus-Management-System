@@ -10,11 +10,13 @@ Name	WARDA SALIUM ABDI
 Institution	Mzumbe University
 Programme	Bachelor of Science in Information Technology Systems (BSc ITS)
 Registration Number	14322027/T.24
-Project Title	Bus Stop Management System (BSMS)
+Project Title	Bus Management System (BSMS)
 Year	2026
 
  Features
+ 
 Core Features
+
 ✅ User Authentication - Secure login and registration system
 
 ✅ Role-Based Access Control - Different permissions for Admin, Driver, and Passenger
