@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSMS - Bus Stop Management System</title>
+    <!-- CSS path imebadilishwa -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="app">
+        
+        <!-- Modern Landing Page -->
+        <div id="landingPage" class="landing-container">
+            
+            <!-- Premium Navigation -->
+            <div class="premium-nav">
+                <div class="nav-container">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <span>BSMS<span class="logo-highlight">Premium</span></span>
+                    </div>
+                    <div class="nav-menu">
+                        <a href="#" data-section="home" class="nav-link">Home</a>
+                        <a href="#" data-section="features" class="nav-link">Features</a>
+                        <a href="#" data-section="how-it-works" class="nav-link">How It Works</a>
+                        <a href="#" data-section="statistics" class="nav-link">Statistics</a>
+                        <a href="#" data-section="testimonials" class="nav-link">Testimonials</a>
+                        <a href="#" data-section="contact" class="nav-link">Contact</a>
+                        <button class="btn-login" onclick="showLoginModal()" type="button">
+                            <i class="fas fa-key"></i> Login
+                        </button>
+                        <button class="btn-register" onclick="showRegisterModal()" type="button">
+                            <i class="fas fa-user-plus"></i> Register
+                        </button>
+                    </div>
+                    <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Section -->
+            <div id="home" class="premium-hero">
+                <div class="hero-bg-shape"></div>
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-crown"></i> Premium Transport Management
+                        </div>
+                        <h1 class="hero-title">
+                            Smart <span class="gradient-text">Bus Stop</span><br />
+                            Management System
+                        </h1>
+                        <p class="hero-description">
+                            Revolutionize your bus transport operations with our all-in-one solution. 
+                            Manage buses, drivers, routes, tickets, payments, and track everything in real-time.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn-primary-glow" onclick="showLoginModal()" type="button">
+                                <i class="fas fa-rocket"></i> Get Started
+                                <span class="btn-glow"></span>
+                            </button>
+                            <button class="btn-outline-light" onclick="showRegisterModal()" type="button">
+                                <i class="fas fa-user-plus"></i> Create Account
+                            </button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="hero-stat-item">
+                                <div class="stat-number" id="heroStatBuses">0</div>
+                                <div class="stat-label">Active Buses</div>
+                            </div>
+                            <div class="hero-stat-divider"></div>
+                            <div class="hero-stat-item">
+                                <div class="stat-number" id="heroStatDrivers">0</div>
+                                <div class="stat-label">Expert Drivers</div>
+                            </div>
+                            <div class="hero-stat-divider"></div>
+                            <div class="hero-stat-item">
+                                <div class="stat-number" id="heroStatRoutes">0</div>
+                                <div class="stat-label">Happy Routes</div>
+                            </div>
+                            <div class="hero-stat-divider"></div>
+                            <div class="hero-stat-item">
+                                <div class="stat-number" id="heroStatCustomers">0</div>
+                                <div class="stat-label">Satisfied Customers</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-illustration">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>2,345 Tickets</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-chart-line"></i>
+                            <span>+45% Growth</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-clock"></i>
+                            <span>Real-time</span>
+                        </div>
+                        <div class="hero-dashboard-preview">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%232c3e50' rx='15'/%3E%3Crect x='20' y='20' width='160' height='40' rx='8' fill='%233498db'/%3E%3Crect x='200' y='20' width='180' height='40' rx='8' fill='%23ecf0f1'/%3E%3Crect x='20' y='80' width='360' height='80' rx='8' fill='%233498db' opacity='0.3'/%3E%3Crect x='20' y='180' width='170' height='100' rx='8' fill='%233498db' opacity='0.2'/%3E%3Crect x='210' y='180' width='170' height='100' rx='8' fill='%233498db' opacity='0.2'/%3E%3C/svg%3E" alt="Dashboard Preview" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div id="features" class="premium-features">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">Why Choose Us</span>
+                        <h2>Powerful <span class="gradient-text">Features</span> for Modern Transport</h2>
+                        <p>Everything you need to manage your bus transport operations efficiently</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card-premium">
+                            <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3>Real-time Tracking</h3>
+                            <p>GPS-enabled real-time bus tracking with live location updates</p>
+                            <div class="feature-hover"></div>
+                        </div>
+                        <div class="feature-card-premium">
+                            <div class="feature-icon"><i class="fas fa-ticket-alt"></i></div>
+                            <h3>Smart Booking</h3>
+                            <p>Easy online ticket booking with seat selection and confirmation</p>
+                            <div class="feature-hover"></div>
+                        </div>
+                        <div class="feature-card-premium">
+                            <div class="feature-icon"><i class="fas fa-credit-card"></i></div>
+                            <h3>Multiple Payments</h3>
+                            <p>Support for Cash, M-Pesa, TigoPesa, Airtel Money &amp; Bank</p>
+                            <div class="feature-hover"></div>
+                        </div>
+                        <div class="feature-card-premium">
+                            <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                            <h3>Advanced Analytics</h3>
+                            <p>Comprehensive reports with interactive charts</p>
+                            <div class="feature-hover"></div>
+                        </div>
+                        <div class="feature-card-premium">
+                            <div class="feature-icon"><i class="fas fa-bell"></i></div>
+                            <h3>Instant Alerts</h3>
+                            <p>Real-time notifications for schedule changes</p>
+                            <div class="feature-hover"></div>
+                        </div>
+                        <div class="feature-card-premium">
+                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Secure System</h3>
+                            <p>Role-based access control with encrypted data</p>
+                            <div class="feature-hover"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div id="how-it-works" class="how-it-works">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">Simple Process</span>
+                        <h2>How <span class="gradient-text">It Works</span></h2>
+                        <p>Get started in just 4 simple steps</p>
+                    </div>
+                    <div class="steps-container">
+                        <div class="step-item">
+                            <div class="step-number">01</div>
+                            <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+                            <h3>Create Account</h3>
+                            <p>Sign up as Admin, Driver, or Passenger</p>
+                            <div class="step-connector"></div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">02</div>
+                            <div class="step-icon"><i class="fas fa-search"></i></div>
+                            <h3>Search Routes</h3>
+                            <p>Find available buses and schedules</p>
+                            <div class="step-connector"></div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">03</div>
+                            <div class="step-icon"><i class="fas fa-ticket-alt"></i></div>
+                            <h3>Book Tickets</h3>
+                            <p>Select seats and make payment</p>
+                            <div class="step-connector"></div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">04</div>
+                            <div class="step-icon"><i class="fas fa-map-marked-alt"></i></div>
+                            <h3>Track Journey</h3>
+                            <p>Monitor your bus in real-time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <div id="statistics" class="statistics-premium">
+                <div class="container">
+                    <div class="stats-wrapper">
+                        <div class="stats-card-premium">
+                            <div class="stats-icon"><i class="fas fa-bus"></i></div>
+                            <div class="stats-number" id="statTotalBuses">0</div>
+                            <div class="stats-label">Total Buses</div>
+                            <div class="stats-trend positive">+12% this month</div>
+                        </div>
+                        <div class="stats-card-premium">
+                            <div class="stats-icon"><i class="fas fa-id-card"></i></div>
+                            <div class="stats-number" id="statTotalDrivers">0</div>
+                            <div class="stats-label">Total Drivers</div>
+                            <div class="stats-trend positive">+8% this month</div>
+                        </div>
+                        <div class="stats-card-premium">
+                            <div class="stats-icon"><i class="fas fa-road"></i></div>
+                            <div class="stats-number" id="statTotalRoutes">0</div>
+                            <div class="stats-label">Total Routes</div>
+                            <div class="stats-trend positive">+5 new routes</div>
+                        </div>
+                        <div class="stats-card-premium">
+                            <div class="stats-icon"><i class="fas fa-users"></i></div>
+                            <div class="stats-number" id="statTotalPassengers">0</div>
+                            <div class="stats-label">Happy Passengers</div>
+                            <div class="stats-trend positive">+23% this month</div>
+                        </div>
+                        <div class="stats-card-premium">
+                            <div class="stats-icon"><i class="fas fa-ticket-alt"></i></div>
+                            <div class="stats-number" id="statTotalTickets">0</div>
+                            <div class="stats-label">Tickets Sold</div>
+                            <div class="stats-trend positive">+1,234 this week</div>
+                        </div>
+                        <div class="stats-card-premium">
+                            <div class="stats-icon"><i class="fas fa-money-bill-wave"></i></div>
+                            <div class="stats-number" id="statTotalRevenue">0</div>
+                            <div class="stats-label">Total Revenue (TZS)</div>
+                            <div class="stats-trend positive">+18% this month</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div id="testimonials" class="testimonials-premium">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">Testimonials</span>
+                        <h2>What Our <span class="gradient-text">Clients Say</span></h2>
+                        <p>Trusted by thousands of users across Tanzania</p>
+                    </div>
+                    <div class="testimonials-slider">
+                        <div class="testimonial-card-premium">
+                            <div class="testimonial-quote">"</div>
+                            <p>This system has completely transformed how we manage our bus fleet. The real-time tracking feature is a game-changer!</p>
+                            <div class="testimonial-author">
+                                <img src="https://ui-avatars.com/api/?name=John+M&amp;background=3498db&amp;color=fff" alt="John M" />
+                                <div><h4>John Mwakyusa</h4><span>Bus Operator</span></div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card-premium">
+                            <div class="testimonial-quote">"</div>
+                            <p>The online booking system is so easy to use. I can book my tickets in minutes and track my bus arrival time.</p>
+                            <div class="testimonial-author">
+                                <img src="https://ui-avatars.com/api/?name=Sarah+K&amp;background=27ae60&amp;color=fff" alt="Sarah K" />
+                                <div><h4>Sarah Kimaro</h4><span>Regular Passenger</span></div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card-premium">
+                            <div class="testimonial-quote">"</div>
+                            <p>Excellent reporting features! The analytics help us make data-driven decisions for our transport business.</p>
+                            <div class="testimonial-author">
+                                <img src="https://ui-avatars.com/api/?name=Peter+L&amp;background=e74c3c&amp;color=fff" alt="Peter L" />
+                                <div><h4>Peter Lucas</h4><span>Fleet Manager</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <div class="cta-container">
+                    <div class="cta-content">
+                        <h2>Ready to Transform Your Transport Management?</h2>
+                        <p>Join thousands of satisfied users and start managing your bus operations efficiently today</p>
+                        <button class="btn-primary-large" onclick="showLoginModal()" type="button">
+                            <i class="fas fa-arrow-right"></i> Get Started Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="contact-premium">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info-premium">
+                            <h3>Get In Touch</h3>
+                            <p>Have questions? We're here to help you 24/7</p>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div><h4>Visit Us</h4><span>Mzumbe University, Morogoro, Tanzania</span></div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div><h4>Call Us</h4><span>+255 123 456 789</span></div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div><h4>Email Us</h4><span>bsms@mzumbe.ac.tz</span></div>
+                                </div>
+                            </div>
+                            <div class="social-links-premium">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="developer-info-premium">
+                            <h3>Developer Information</h3>
+                            <div class="developer-card">
+                                <div class="developer-avatar"><i class="fas fa-user-graduate"></i></div>
+                                <h4>WARDA SALIUM ABDI</h4>
+                                <p>Bachelor of Science in Information Technology Systems (BSc ITS)</p>
+                                <p class="reg-number">Registration Number: 14322027/T.24</p>
+                                <div class="project-badge"><i class="fas fa-graduation-cap"></i> Academic Project: BSMS</div>
+                                <p class="year">Year: 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="premium-footer">
+                <div class="footer-container">
+                    <div class="footer-grid">
+                        <div class="footer-about">
+                            <div class="footer-logo"><i class="fas fa-bus"></i><span>BSMS<span>Premium</span></span></div>
+                            <p>Your trusted partner in modern bus transport management solutions across Tanzania.</p>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <ul><li><a href="#" data-section="home">Home</a></li><li><a href="#" data-section="features">Features</a></li><li><a href="#" data-section="contact">Contact</a></li></ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Resources</h4>
+                            <ul><li><a href="#">Help Center</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul>
+                        </div>
+                        <div class="footer-newsletter">
+                            <h4>Newsletter</h4>
+                            <p>Subscribe for updates</p>
+                            <div class="newsletter-form"><input type="email" placeholder="Your email" /><button type="button"><i class="fas fa-paper-plane"></i></button></div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom"><p>&copy; 2026 Bus Stop Management System. Developed by WARDA SALIUM ABDI | Mzumbe University</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium Dashboard -->
+        <div id="dashboardView" class="premium-dashboard" style="display:none">
+            <div class="dashboard-sidebar">
+                <div class="sidebar-header-premium">
+                    <div class="sidebar-logo"><i class="fas fa-bus"></i><span>BSMS</span></div>
+                    <div class="sidebar-close" onclick="toggleSidebar()"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="sidebar-user">
+                    <img src="https://ui-avatars.com/api/?name=User&amp;background=3498db&amp;color=fff" alt="User" />
+                    <div class="user-info"><h4 id="sidebarUserName">Loading...</h4><span id="sidebarUserRole">Role</span></div>
+                </div>
+                <div class="sidebar-nav-premium">
+                    <a href="#" data-module="dashboard" class="nav-item-premium active"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+                    <a href="#" data-module="users" class="nav-item-premium"><i class="fas fa-users"></i><span>Users</span></a>
+                    <a href="#" data-module="busStops" class="nav-item-premium"><i class="fas fa-map-marker-alt"></i><span>Bus Stops</span></a>
+                    <a href="#" data-module="buses" class="nav-item-premium"><i class="fas fa-bus"></i><span>Buses</span></a>
+                    <a href="#" data-module="drivers" class="nav-item-premium"><i class="fas fa-id-card"></i><span>Drivers</span></a>
+                    <a href="#" data-module="routes" class="nav-item-premium"><i class="fas fa-road"></i><span>Routes</span></a>
+                    <a href="#" data-module="assignments" class="nav-item-premium"><i class="fas fa-exchange-alt"></i><span>Assignments</span></a>
+                    <a href="#" data-module="schedules" class="nav-item-premium"><i class="fas fa-calendar-alt"></i><span>Schedules</span></a>
+                    <a href="#" data-module="tracking" class="nav-item-premium"><i class="fas fa-map-marked-alt"></i><span>Live Tracking</span></a>
+                    <a href="#" data-module="passengers" class="nav-item-premium"><i class="fas fa-user-friends"></i><span>Passengers</span></a>
+                    <a href="#" data-module="tickets" class="nav-item-premium"><i class="fas fa-ticket-alt"></i><span>Tickets</span></a>
+                    <a href="#" data-module="payments" class="nav-item-premium"><i class="fas fa-credit-card"></i><span>Payments</span></a>
+                    <a href="#" data-module="announcements" class="nav-item-premium"><i class="fas fa-bullhorn"></i><span>Announcements</span></a>
+                    <a href="#" data-module="reports" class="nav-item-premium"><i class="fas fa-chart-line"></i><span>Reports</span></a>
+                    <a href="#" data-module="settings" class="nav-item-premium"><i class="fas fa-cog"></i><span>Settings</span></a>
+                    <a href="#" onclick="logout()" class="nav-item-premium logout"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+                </div>
+            </div>
+            <div class="dashboard-main">
+                <div class="dashboard-header">
+                    <div class="header-left">
+                        <div class="menu-toggle-btn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></div>
+                        <div class="page-title"><h2 id="currentPageTitle">Dashboard</h2><p id="currentPageDesc">Welcome back! Here's what's happening today.</p></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="notification-bell"><i class="fas fa-bell"></i><span class="notification-badge">3</span></div>
+                        <div class="user-dropdown"><img src="https://ui-avatars.com/api/?name=User&amp;background=3498db&amp;color=fff" alt="User" /><span id="currentUserDisplay">Loading...</span><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div id="dynamicContent" class="dashboard-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="premium-modal">
+        <div class="modal-container">
+            <div class="modal-left">
+                <div class="modal-brand"><i class="fas fa-bus"></i><h3>BSMS Premium</h3><p>Welcome back! Please login to your account</p></div>
+                <div class="modal-features"><div class="modal-feature"><i class="fas fa-check-circle"></i> Real-time Tracking</div><div class="modal-feature"><i class="fas fa-check-circle"></i> Smart Booking</div><div class="modal-feature"><i class="fas fa-check-circle"></i> Secure Payments</div></div>
+            </div>
+            <div class="modal-right">
+                <div class="modal-close" onclick="closeLoginModal()">&times;</div>
+                <h2>Login to Account</h2>
+                <form id="loginForm" action="javascript:void(0);">
+                    <div class="input-group"><i class="fas fa-user"></i><input type="text" id="loginUsername" placeholder="Username or Email" required="required" /></div>
+                    <div class="input-group"><i class="fas fa-lock"></i><input type="password" id="loginPassword" placeholder="Password" required="required" /></div>
+                    <div class="form-options"><label class="checkbox"><input type="checkbox" /> Remember me</label><a href="#">Forgot Password?</a></div>
+                    <button type="submit" class="btn-login-modal"><i class="fas fa-sign-in-alt"></i> Login</button>
+                </form>
+                <div class="modal-footer"><p>Don't have an account? <a href="#" onclick="closeLoginModal(); showRegisterModal();">Register here</a></p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="premium-modal">
+        <div class="modal-container">
+            <div class="modal-left" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                <div class="modal-brand"><i class="fas fa-user-plus"></i><h3>Join BSMS Premium</h3><p>Create your account and start managing your bus transport efficiently</p></div>
+                <div class="modal-features"><div class="modal-feature"><i class="fas fa-gift"></i> Free Registration</div><div class="modal-feature"><i class="fas fa-chart-line"></i> Access to Analytics</div><div class="modal-feature"><i class="fas fa-headset"></i> 24/7 Support</div></div>
+            </div>
+            <div class="modal-right">
+                <div class="modal-close" onclick="closeRegisterModal()">&times;</div>
+                <h2>Create Account</h2>
+                <form id="registerForm" action="javascript:void(0);">
+                    <div class="input-group"><i class="fas fa-user"></i><input type="text" id="regFullName" placeholder="Full Name" required="required" /></div>
+                    <div class="input-group"><i class="fas fa-at"></i><input type="text" id="regUsername" placeholder="Username" required="required" /></div>
+                    <div class="input-group"><i class="fas fa-envelope"></i><input type="email" id="regEmail" placeholder="Email Address" required="required" /></div>
+                    <div class="input-group"><i class="fas fa-lock"></i><input type="password" id="regPassword" placeholder="Password" required="required" /></div>
+                    <div class="input-group"><i class="fas fa-check-circle"></i><input type="password" id="regConfirmPassword" placeholder="Confirm Password" required="required" /></div>
+                    <div class="input-group"><i class="fas fa-tag"></i><select id="regRole"><option value="Passenger">Passenger</option><option value="Driver">Driver</option></select></div>
+                    <button type="submit" class="btn-login-modal" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);"><i class="fas fa-user-plus"></i> Register</button>
+                </form>
+                <div class="modal-footer"><p>Already have an account? <a href="#" onclick="closeRegisterModal(); showLoginModal();">Login here</a></p></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="genericModal" class="premium-modal" style="display:none">
+        <div class="modal-container-small">
+            <div class="modal-header-premium"><h3 id="modalTitle">Modal Title</h3><span class="modal-close" onclick="closeModal()">&times;</span></div>
+            <div id="modalBody" class="modal-body-premium"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript path imebadilishwa kwa relative path -->
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
