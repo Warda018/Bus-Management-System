@@ -1,22 +1,17 @@
-# Bus-Management-System
-
 Bus Stop Management System (BSMS) - Complete README
-Project Overview
-The Bus Management System (BSMS) is a comprehensive web-based application designed to streamline and manage bus transport operations. This system provides an all-in-one solution for managing buses, drivers, routes, schedules, tickets, payments, and real-time bus tracking. Built with modern web technologies, it offers role-based access control for Admin, Driver, and Passenger users.
+📋 Project Overview
+The Bus Stop Management System (BSMS) is a comprehensive web-based application designed to streamline and manage bus transport operations. This system provides an all-in-one solution for managing buses, drivers, routes, schedules, tickets, payments, and real-time bus tracking. Built with modern web technologies, it offers role-based access control for Admin, Driver, and Passenger users.
 
-Developer Information
+👨‍💻 Developer Information
 Field	Details
 Name	WARDA SALIUM ABDI
 Institution	Mzumbe University
 Programme	Bachelor of Science in Information Technology Systems (BSc ITS)
 Registration Number	14322027/T.24
-Project Title	Bus Management System (BSMS)
+Project Title	Bus Stop Management System (BSMS)
 Year	2026
-
- Features
- 
+🚀 Features
 Core Features
-
 ✅ User Authentication - Secure login and registration system
 
 ✅ Role-Based Access Control - Different permissions for Admin, Driver, and Passenger
@@ -43,27 +38,25 @@ Core Features
 
 ✅ Profile Management - Update profile and change password
 
-
 Security Features
- Password hashing (bcrypt)
+🔒 Password hashing (bcrypt)
 
- SQL injection prevention (Prepared Statements)
+🔒 SQL injection prevention (Prepared Statements)
 
- Session-based authentication
+🔒 Session-based authentication
 
-Role-based access control
+🔒 Role-based access control
 
-XSS protection
+🔒 XSS protection
 
- System Architecture
+📁 System Architecture
 File Structure
+text
 Bus-Stop-Management-System/
 ├── index.html          # Frontend interface (Landing page + Dashboard)
 ├── style.css           # Complete styling and responsive design
 ├── script.js           # Client-side logic and AJAX requests
 └── system.php          # Backend API and database operations
-
-# Backend API and database operations
 Technology Stack
 Layer	Technology
 Frontend	HTML5, CSS3, JavaScript (Vanilla JS)
@@ -71,8 +64,6 @@ Backend	PHP 7.4+
 Database	MySQL 5.7+
 Libraries	Chart.js, Font Awesome 6, Google Fonts (Inter)
 Server	Apache (XAMPP/WAMP/LAMP)
-
-
 🗄️ Database Schema
 Database Name: bsms_db
 Tables Structure
@@ -90,9 +81,7 @@ tickets	Ticket booking records
 payments	Payment transactions
 announcements	System announcements
 reports	Generated reports log
-
-
-Installation Guide
+🔧 Installation Guide
 Prerequisites
 XAMPP (or any local server with PHP and MySQL)
 
@@ -296,11 +285,11 @@ define('DB_NAME', 'bsms_db');
 Step 8: Access the Application
 bash
 # Open web browser and navigate to:
-http://localhost/Bus-Management-System/
+http://localhost/Bus-Stop-Management-System/
 
 # Or if using different port:
 http://localhost:8080/Bus-Stop-Management-System/
-ogin Credentials
+🔑 Login Credentials
 Default Admin Account
 Field	Value
 Username	admin
@@ -312,8 +301,8 @@ Choose role: Passenger or Driver
 
 Admin accounts must be created by existing Admin
 
-Role-Based Access Control
-ADMIN - Full Access
+👥 Role-Based Access Control
+👑 ADMIN - Full Access
 Module	Permission
 Dashboard	✅ View all statistics
 Users	✅ Create, Read, Update, Delete
@@ -329,8 +318,6 @@ Payments	✅ View all, Process refunds
 Announcements	✅ Create, Edit, Delete
 Reports	✅ Generate all reports
 Settings	✅ Full access
-
-
 🚌 DRIVER - Limited Access
 Module	Permission
 Dashboard	✅ View basic stats
@@ -341,8 +328,6 @@ Tracking	✅ Update own bus location
 Announcements	✅ View only
 Reports	✅ View limited reports
 Settings	✅ Change own password
-
-
 👤 PASSENGER - Basic Access
 Module	Permission
 Dashboard	✅ View basic stats
@@ -353,8 +338,6 @@ Payments	✅ Make payments
 Announcements	✅ View only
 Settings	✅ Change own password
 📱 How to Use the System
-
-
 For All Users
 1. Landing Page Navigation
 Click navigation links to view different sections
@@ -363,14 +346,12 @@ Login - Access your account
 
 Register - Create new account
 
-
 2. Dashboard Access
 After login, you'll see the main dashboard
 
 Sidebar menu shows modules based on your role
 
 Click any menu item to access that module
-
 
 For Admin Users
 Managing Users
@@ -390,7 +371,6 @@ Click Add Bus to register new bus
 Enter bus number, name, registration, capacity
 
 Set status (Available/On Route/Maintenance/Inactive)
-
 
 Managing Drivers
 Go to Drivers module
@@ -476,7 +456,6 @@ Endpoint	Method	Description
 ?action=book_ticket	POST	Book new ticket
 ?action=get_announcements	GET	List announcements
 ?action=generate_report	GET	Generate report
-
 🐛 Troubleshooting
 Common Issues and Solutions
 Problem	Solution
@@ -512,8 +491,6 @@ RAM	2 GB or higher
 Storage	500 MB free space
 Internet	Broadband connection
 Browser	Latest version of Chrome/Firefox
-
-
 📝 Project Status
 Aspect	Status
 Frontend Development	✅ Complete
